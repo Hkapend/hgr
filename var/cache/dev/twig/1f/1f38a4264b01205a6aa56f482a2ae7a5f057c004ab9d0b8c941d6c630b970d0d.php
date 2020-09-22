@@ -58,17 +58,13 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         // line 11
         echo "    </head>
     <body>
-
         ";
-        // line 14
+        // line 13
         $this->displayBlock('body', $context, $blocks);
-        // line 15
-        echo "
-
-        ";
-        // line 17
+        // line 14
+        echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 21
+        // line 18
         echo "    </body>
 </html>
 ";
@@ -130,7 +126,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 14
+    // line 13
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -148,7 +144,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 17
+    // line 14
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -158,12 +154,12 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 18
+        // line 15
         echo "            <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/assets/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 19
+        // line 16
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/assets/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
         ";
@@ -182,7 +178,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  167 => 19,  162 => 18,  152 => 17,  134 => 14,  122 => 9,  118 => 8,  113 => 7,  103 => 6,  84 => 5,  72 => 21,  70 => 17,  66 => 15,  64 => 14,  59 => 11,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  163 => 16,  158 => 15,  148 => 14,  130 => 13,  118 => 9,  114 => 8,  109 => 7,  99 => 6,  80 => 5,  68 => 18,  65 => 14,  63 => 13,  59 => 11,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -199,10 +195,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         {% endblock %}
     </head>
     <body>
-
         {% block body %}{% endblock %}
-
-
         {% block javascripts %}
             <script src=\"{{ asset('/assets/js/jquery.min.js') }}\"></script>
             <script src=\"{{ asset('/assets/js/bootstrap.bundle.min.js')}}\"></script>

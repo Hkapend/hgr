@@ -31,6 +31,6 @@ class MwangejiController extends AbstractController
     */
     public function patient()
     {
-        return $this->render('/mwangeji/navbar.html.twig');
+        return $this->render('/mwangeji/patient.html.twig');
     }
 }
