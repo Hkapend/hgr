@@ -26,4 +26,11 @@ class MwangejiController extends AbstractController
         ['title'=>'Connectez-vous']
         );
     }
+    /**
+    * @Route ("/patient" , name="patient")
+    */
+    public function patient()
+    {
+        return $this->render('/mwangeji/navbar.html.twig');
+    }
 }
