@@ -900,6 +900,6 @@ class __TwigTemplate_cf5496afce8eb1b57a6001226804e3845e7889692557424e50207f10247
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/jessy/Documents/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/home/hkap/Bureau/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

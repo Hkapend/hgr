@@ -174,6 +174,6 @@ class __TwigTemplate_7af5b49de1285431438a88f4da44ef74d300cc6ec9d5d11edd519a23354
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/jessy/Documents/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/home/hkap/Bureau/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

@@ -60,7 +60,8 @@ class __TwigTemplate_cc17475dbc51d975ccc33dcb52080df3c1312a7a84bf63543cf48b3aeb8
                 </li>
             </ul>
         </div>
-    </nav>";
+    </nav>
+    ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -105,6 +106,7 @@ class __TwigTemplate_cc17475dbc51d975ccc33dcb52080df3c1312a7a84bf63543cf48b3aeb8
                 </li>
             </ul>
         </div>
-    </nav>", "mwangeji/sidebar.html.twig", "/home/jessy/Documents/mwangeji/templates/mwangeji/sidebar.html.twig");
+    </nav>
+    ", "mwangeji/sidebar.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/sidebar.html.twig");
     }
 }

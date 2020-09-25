@@ -146,6 +146,6 @@ class __TwigTemplate_b6ae7f6aa7afc26b73217f8bec54f4a4e1b01fd0ea3234d4bb64e1783b2
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "/home/jessy/Documents/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_redirect.html.twig");
+", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "/home/hkap/Bureau/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_redirect.html.twig");
     }
 }

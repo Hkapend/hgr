@@ -803,6 +803,6 @@ class __TwigTemplate_b4e8aec9c6c79fcc8fd5b8cdbe84394681399c469005699582e378e57d8
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/home/jessy/Documents/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/home/hkap/Bureau/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

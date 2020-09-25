@@ -18,4 +18,6 @@ return [
     'mwangeji' => [[], ['_controller' => 'App\\Controller\\MwangejiController::index'], [], [['text', '/mwangeji']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\MwangejiController::login'], [], [['text', '/']], [], []],
     'patient' => [[], ['_controller' => 'App\\Controller\\MwangejiController::patient'], [], [['text', '/patient']], [], []],
+    'categorie' => [[], ['_controller' => 'App\\Controller\\MwangejiController::categorie'], [], [['text', '/categorie']], [], []],
+    'personne' => [[], ['_controller' => 'App\\Controller\\MwangejiController::personne'], [], [['text', '/personne']], [], []],
 ];

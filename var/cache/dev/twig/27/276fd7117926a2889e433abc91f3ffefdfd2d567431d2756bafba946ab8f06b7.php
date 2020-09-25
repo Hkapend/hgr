@@ -1882,6 +1882,6 @@ class __TwigTemplate_900434265e50fa8dfe046df3d05d3d7a149b8f94dd195d46746d2328135
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/jessy/Documents/mwangeji/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/hkap/Bureau/mwangeji/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

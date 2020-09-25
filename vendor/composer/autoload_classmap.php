@@ -6,6 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\MwangejiController' => $baseDir . '/src/Controller/MwangejiController.php',
+    'App\\Entity\\Categorie' => $baseDir . '/src/Entity/Categorie.php',
+    'App\\Entity\\Personne' => $baseDir . '/src/Entity/Personne.php',
+    'App\\Form\\CategorieType' => $baseDir . '/src/Form/CategorieType.php',
+    'App\\Kernel' => $baseDir . '/src/Kernel.php',
+    'App\\Repository\\CategorieRepository' => $baseDir . '/src/Repository/CategorieRepository.php',
+    'App\\Repository\\PersonneRepository' => $baseDir . '/src/Repository/PersonneRepository.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
     'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => $vendorDir . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
     'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => $vendorDir . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',

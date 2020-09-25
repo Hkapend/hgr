@@ -330,6 +330,6 @@ class __TwigTemplate_243f4458568964a04c5dbe536ecc51d1986b6e04d5eb3db080906fd1389
     {% endif %}
 
 {% endblock %}
-", "@WebProfiler/Profiler/results.html.twig", "/home/jessy/Documents/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/results.html.twig");
+", "@WebProfiler/Profiler/results.html.twig", "/home/hkap/Bureau/mwangeji/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/results.html.twig");
     }
 }

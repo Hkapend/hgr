@@ -171,6 +171,6 @@ class __TwigTemplate_42b4b2bb4e5ab2290d37ec76d465ef301e4bc555ea8e2093120d3d4d6ab
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/jessy/Documents/mwangeji/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/hkap/Bureau/mwangeji/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* /mwangeji/login.html.twig */
+/* mwangeji/login.html.twig */
 class __TwigTemplate_6eb8dc5084b166595d2d78616471119332fa178b8ede9c7ac2576597c734676a extends Template
 {
     private $source;
@@ -39,12 +39,12 @@ class __TwigTemplate_6eb8dc5084b166595d2d78616471119332fa178b8ede9c7ac2576597c73
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/mwangeji/login.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "mwangeji/login.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/mwangeji/login.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "mwangeji/login.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "/mwangeji/login.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "mwangeji/login.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -109,7 +109,7 @@ class __TwigTemplate_6eb8dc5084b166595d2d78616471119332fa178b8ede9c7ac2576597c73
 
     public function getTemplateName()
     {
-        return "/mwangeji/login.html.twig";
+        return "mwangeji/login.html.twig";
     }
 
     public function isTraitable()
@@ -155,6 +155,6 @@ class __TwigTemplate_6eb8dc5084b166595d2d78616471119332fa178b8ede9c7ac2576597c73
     </div>
 
 {% endblock %}
-", "/mwangeji/login.html.twig", "/home/jessy/Documents/mwangeji/templates/mwangeji/login.html.twig");
+", "mwangeji/login.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/login.html.twig");
     }
 }

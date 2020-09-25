@@ -558,6 +558,13 @@ class ComposerStaticInit3dae337786d5e901bcb765ad5ab20271
     );
 
     public static $classMap = array (
+        'App\\Controller\\MwangejiController' => __DIR__ . '/../..' . '/src/Controller/MwangejiController.php',
+        'App\\Entity\\Categorie' => __DIR__ . '/../..' . '/src/Entity/Categorie.php',
+        'App\\Entity\\Personne' => __DIR__ . '/../..' . '/src/Entity/Personne.php',
+        'App\\Form\\CategorieType' => __DIR__ . '/../..' . '/src/Form/CategorieType.php',
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\CategorieRepository' => __DIR__ . '/../..' . '/src/Repository/CategorieRepository.php',
+        'App\\Repository\\PersonneRepository' => __DIR__ . '/../..' . '/src/Repository/PersonneRepository.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',

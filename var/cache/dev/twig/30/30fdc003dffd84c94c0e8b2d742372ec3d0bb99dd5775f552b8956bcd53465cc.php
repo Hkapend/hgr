@@ -119,6 +119,6 @@ class __TwigTemplate_f59da7ddb2717ea16ec0bc8919035ab1047a0c2d8f6d2ec598e4650a737
         </div>
         <!-- /#sidebar-wrapper -->
 
-{% endblock %}", "mwangeji/navbar.html.twig", "/home/jessy/Documents/mwangeji/templates/mwangeji/navbar.html.twig");
+{% endblock %}", "mwangeji/navbar.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/navbar.html.twig");
     }
 }
