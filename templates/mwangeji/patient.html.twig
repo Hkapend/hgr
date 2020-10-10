@@ -1,9 +1,142 @@
 {% include 'mwangeji/sidebar.html.twig' %}
-
-
-<div class="container-fluid">
-    Insertion du contenue
-</div>
-</div>
-<!-- /#page-content-wrapper -->
-</div>
+<title> {% block title %}{{ page_name }}{% endblock %}</title>
+{% block body %}
+    <div class="container-fluid">
+        <div class="card-body">
+            <form action="" method="post">
+                <h4 class="heading-small text-lg-center mb-4"><i class="ni ni-briefcase-24 text-muted">  Enregistrement du patient</i></h4>
+                <div class="pl-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">Saisir le nom</label>
+                                <input type="text" id="input-username" class="form-control" placeholder="ex: kapend" name="nom">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">Saisir le post-nom</label>
+                                <input type="text" id="input-username" class="form-control" placeholder="ex: a ileng" name="post">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">Saisir le prénom</label>
+                                <input type="text" id="input-username" class="form-control" placeholder="ex: Hervé" name="prenom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">Saisir le lieu de naissance</label>
+                                <input type="text" id="input-username" class="form-control" placeholder="ex:Kolwezi" name="lieu">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">Saisir la date de naissance</label>
+                                <input type="date" id="input-username" class="form-control" placeholder="ex: 07/10/1997" name="date">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="select-genre">Sexe</label>
+                                <select id="select-genre" class="form-control" name="genre">
+                                    <option value="Masculin">Masculin</option>
+                                    <option value="Féminin">Féminin</option>
+                                    <option value="Other...">Autre...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-fiche">Saisir le numéro de la fiche</label>
+                                <input type="text" id="input-fiche" class="form-control" placeholder="ex: 07/4516/2020" name="fiche">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="select-type">Type de Patient</label>
+                                <select id="select-type" class="form-control" name="type">
+                                    <option value="1" data-toggle="collapse" href="#collapseAbonne" role="button" aria-expanded="false" aria-controls="collapseAbonne">Abonné</option>
+                                    <option value="2" data-toggle="collapse" href="#collapsePrive" role="button" aria-expanded="false" aria-controls="collapsePrive">Privé</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapsePrive">
+                        <hr class="my-1" />
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-adresseprive">Saisir l'adresse du patient</label>
+                                    <input type="text" id="input-adresseprive" class="form-control" placeholder="ex: 07/4516/2020" name="adresseprive">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-desc">Saisir la description</label>
+                                    <textarea rows="1" class="form-control" placeholder="un mot sur le patient" name="descr"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseAbonne">
+                        <hr class="my-1" />
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-adresseabonne">Saisir l'adresse du patient</label>
+                                    <input type="text" id="input-adresseabonne" class="form-control" placeholder="ex: 07/4516/2020" name="adresseabone">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-1" />
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-entreprise">Saisir le nom de l'entreprise</label>
+                                    <input type="text" id="input-entreprise" class="form-control" placeholder="ex: SNEL" name="entreprise">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-bon">Bon Numéro</label>
+                                    <input type="text" id="input-bon" class="form-control" placeholder="ex: 12/SNEL/Med" name="bon">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-agent">Saisir le nom de l'agent</label>
+                                    <input type="text" id="input-agent" class="form-control" placeholder="ex: Hervé Kapend" name="agent">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="input-matricule">Saisir le matricule de l'agent</label>
+                                    <input type="text" id="input-matricule" class="form-control" placeholder="ex: H01232" name="matricule">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-outline-primary"><i class="fa fa-save text-white"></i>  Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

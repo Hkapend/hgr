@@ -5,12 +5,60 @@
         <div class="bg-admin border-right" id="sidebar-wrapper">
             <div class="sidebar-heading"> <h3 class="text-white">Gestion Hopital </h3></div>
             <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item list-group-item-action bg-admin"></a>
-                <a href="#" class="list-group-item list-group-item-action bg-admin"></a>
-                <a href="#" class="list-group-item list-group-item-action bg-admin"></a>
-                <a href="#" class="list-group-item list-group-item-action bg-admin"></a>
+                <a href="{{ path('personne') }}" class="list-group-item list-group-item-action bg-admin">
+                    <i class="fa fa-address-book text-white"></i>
+                    <span class="nav-link-text">Les Personnelles</span>
+                </a>
             </div>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link list-group-item-action bg-admin" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-users-cog text-blue">  </i>Paramètres
+                </a>
+                <div class="dropdown-menu list-group-item-action bg-admin" aria-labelledby="dropdownMenuLink ">
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('categorie') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Paramètre catégorie</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link list-group-item-action bg-admin" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-users-cog text-blue">  </i>Patient
+                </a>
+                <div class="dropdown-menu list-group-item-action bg-admin" aria-labelledby="dropdownMenuLink ">
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('patient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Nouveau Patient</span>
+                    </a>
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('oldpatient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Ancien Patient</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link list-group-item-action bg-admin" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-users-cog text-blue">  </i>Listing
+                </a>
+                <div class="dropdown-menu list-group-item-action bg-admin" aria-labelledby="dropdownMenuLink ">
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('patient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Patients Abonné</span>
+                    </a>
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('patient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Patients Privés</span>
+                    </a>
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('oldpatient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Personnelles</span>
+                    </a>
+                    <a class="dropdown-item list-group-item-action bg-admin" href="{{ path('oldpatient') }}">
+                        <i class="fa fa-calendar-times text-white"></i>
+                        <span class="nav-link-text">Bon Médical</span>
+                    </a>
+                </div>
+            </li>
         </div>
         <!-- /#sidebar-wrapper -->
-
 {% endblock %}

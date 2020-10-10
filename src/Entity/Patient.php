@@ -18,7 +18,7 @@ class Patient
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=50)
      */
     private $numFiche;
 
@@ -27,17 +27,22 @@ class Patient
      */
     private $personne;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=TypePatient::class)
+     */
+    private $type;
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNumFiche(): ?int
+    public function getNumFiche(): ?string
     {
         return $this->numFiche;
     }
 
-    public function setNumFiche(int $numFiche): self
+    public function setNumFiche(string $numFiche): self
     {
         $this->numFiche = $numFiche;
 
@@ -52,6 +57,18 @@ class Patient
     public function setPersonne(?Personne $personne): self
     {
         $this->personne = $personne;
+
+        return $this;
+    }
+
+    public function getType(): ?TypePatient
+    {
+        return $this->type;
+    }
+
+    public function setType(?TypePatient $type): self
+    {
+        $this->type = $type;
 
         return $this;
     }

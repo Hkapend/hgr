@@ -1,0 +1,95 @@
+{% include 'mwangeji/sidebar.html.twig' %}
+
+<title> {% block title %}{{ page_name }}{% endblock %}</title>
+{% block body %}
+    <div class="container-fluid">
+        <div class="card-body">
+            {{ form_start(formulaire) }}
+            <div class="pl-lg-4">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            {{ form_row(formulaire.categorie, {'attr':{'placeholder':"ex: Categorie"}}) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            {{ form_row(formulaire.active, {'attr':{'placeholder':"ex: 1"}}) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-outline-primary"><i class="fa fa-save text-white"></i>  Enregistrer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ form_end(formulaire) }}
+        </div>
+        <div class="col-10">
+            <div class="shadow">
+                <div class="card-header bg-transparent border-0">
+                    <h3 class="text-dark mb-0">Liste des Catégories</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-white table-flush">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="sort" data-sort="">Catégories</th>
+                            <th scope="col" class="sort" data-sort="">Visibilité</th>
+                        </tr>
+                        </thead>
+                        <tbody class="list">
+                        {% for affiche in _Affichage %}
+                            <tr>
+                                <th scope="row">
+                                    {{affiche.categorie}}
+                                </th>
+                                <th class="budget">
+                                    {% if affiche.active == "1" %}
+                                        <p>Actif</p>
+                                    {% endif %}
+                                    {% if affiche.active == "0" %}
+                                        <p>Inactif</p>
+                                    {% endif %}
+                                </th>
+                                <th class="bg-default shadow">
+                                    <button type="submit" class="btn btn-warning"><i class="fa fa-edit text-white"></i></button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash text-white"></i></button>
+                                </th>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer py-4 card bg-default shadow">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-end mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">
+                                    <i class="fas fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

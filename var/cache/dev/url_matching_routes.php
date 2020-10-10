@@ -15,9 +15,11 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/mwangeji' => [[['_route' => 'mwangeji', '_controller' => 'App\\Controller\\MwangejiController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'login', '_controller' => 'App\\Controller\\MwangejiController::login'], null, null, null, false, false, null]],
-        '/patient' => [[['_route' => 'patient', '_controller' => 'App\\Controller\\MwangejiController::patient'], null, null, null, false, false, null]],
         '/categorie' => [[['_route' => 'categorie', '_controller' => 'App\\Controller\\MwangejiController::categorie'], null, null, null, false, false, null]],
         '/personne' => [[['_route' => 'personne', '_controller' => 'App\\Controller\\MwangejiController::personne'], null, null, null, false, false, null]],
+        '/patient' => [[['_route' => 'patient', '_controller' => 'App\\Controller\\MwangejiController::patient'], null, null, null, false, false, null]],
+        '/oldpatient' => [[['_route' => 'oldpatient', '_controller' => 'App\\Controller\\MwangejiController::oldpatient'], null, null, null, false, false, null]],
+        '/typepatient' => [[['_route' => 'typepatient', '_controller' => 'App\\Controller\\MwangejiController::TypePatient'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

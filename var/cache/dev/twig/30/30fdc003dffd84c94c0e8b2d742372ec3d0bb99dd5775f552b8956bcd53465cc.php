@@ -70,14 +70,86 @@ class __TwigTemplate_f59da7ddb2717ea16ec0bc8919035ab1047a0c2d8f6d2ec598e4650a737
         <div class=\"bg-admin border-right\" id=\"sidebar-wrapper\">
             <div class=\"sidebar-heading\"> <h3 class=\"text-white\">Gestion Hopital </h3></div>
             <div class=\"list-group list-group-flush\">
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
+                <a href=\"";
+        // line 8
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("personne");
+        echo "\" class=\"list-group-item list-group-item-action bg-admin\">
+                    <i class=\"fa fa-address-book text-white\"></i>
+                    <span class=\"nav-link-text\">Les Personnelles</span>
+                </a>
             </div>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Paramètres
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categorie");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Paramètre catégorie</span>
+                    </a>
+                </div>
+            </li>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Patient
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 29
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("patient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Nouveau Patient</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 33
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("oldpatient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Ancien Patient</span>
+                    </a>
+                </div>
+            </li>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Listing
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 44
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("patient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Patients Abonné</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 48
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("patient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Patients Privés</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 52
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("oldpatient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Personnelles</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"";
+        // line 56
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("oldpatient");
+        echo "\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Bon Médical</span>
+                    </a>
+                </div>
+            </li>
         </div>
         <!-- /#sidebar-wrapper -->
-
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -99,7 +171,7 @@ class __TwigTemplate_f59da7ddb2717ea16ec0bc8919035ab1047a0c2d8f6d2ec598e4650a737
 
     public function getDebugInfo()
     {
-        return array (  68 => 3,  58 => 2,  35 => 1,);
+        return array (  144 => 56,  137 => 52,  130 => 48,  123 => 44,  109 => 33,  102 => 29,  88 => 18,  75 => 8,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -111,14 +183,62 @@ class __TwigTemplate_f59da7ddb2717ea16ec0bc8919035ab1047a0c2d8f6d2ec598e4650a737
         <div class=\"bg-admin border-right\" id=\"sidebar-wrapper\">
             <div class=\"sidebar-heading\"> <h3 class=\"text-white\">Gestion Hopital </h3></div>
             <div class=\"list-group list-group-flush\">
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
-                <a href=\"#\" class=\"list-group-item list-group-item-action bg-admin\"></a>
+                <a href=\"{{ path('personne') }}\" class=\"list-group-item list-group-item-action bg-admin\">
+                    <i class=\"fa fa-address-book text-white\"></i>
+                    <span class=\"nav-link-text\">Les Personnelles</span>
+                </a>
             </div>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Paramètres
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('categorie') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Paramètre catégorie</span>
+                    </a>
+                </div>
+            </li>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Patient
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('patient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Nouveau Patient</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('oldpatient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Ancien Patient</span>
+                    </a>
+                </div>
+            </li>
+            <li class=\"nav-item dropdown\">
+                <a class=\"dropdown-toggle nav-link list-group-item-action bg-admin\" href=\"#\" role=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"fa fa-users-cog text-blue\">  </i>Listing
+                </a>
+                <div class=\"dropdown-menu list-group-item-action bg-admin\" aria-labelledby=\"dropdownMenuLink \">
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('patient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Patients Abonné</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('patient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Patients Privés</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('oldpatient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Personnelles</span>
+                    </a>
+                    <a class=\"dropdown-item list-group-item-action bg-admin\" href=\"{{ path('oldpatient') }}\">
+                        <i class=\"fa fa-calendar-times text-white\"></i>
+                        <span class=\"nav-link-text\">Bon Médical</span>
+                    </a>
+                </div>
+            </li>
         </div>
         <!-- /#sidebar-wrapper -->
-
 {% endblock %}", "mwangeji/navbar.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/navbar.html.twig");
     }
 }

@@ -17,7 +17,9 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'mwangeji' => [[], ['_controller' => 'App\\Controller\\MwangejiController::index'], [], [['text', '/mwangeji']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\MwangejiController::login'], [], [['text', '/']], [], []],
-    'patient' => [[], ['_controller' => 'App\\Controller\\MwangejiController::patient'], [], [['text', '/patient']], [], []],
     'categorie' => [[], ['_controller' => 'App\\Controller\\MwangejiController::categorie'], [], [['text', '/categorie']], [], []],
     'personne' => [[], ['_controller' => 'App\\Controller\\MwangejiController::personne'], [], [['text', '/personne']], [], []],
+    'patient' => [[], ['_controller' => 'App\\Controller\\MwangejiController::patient'], [], [['text', '/patient']], [], []],
+    'oldpatient' => [[], ['_controller' => 'App\\Controller\\MwangejiController::oldpatient'], [], [['text', '/oldpatient']], [], []],
+    'typepatient' => [[], ['_controller' => 'App\\Controller\\MwangejiController::TypePatient'], [], [['text', '/typepatient']], [], []],
 ];

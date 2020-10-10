@@ -48,12 +48,11 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <title>";
+        ";
         // line 5
         $this->displayBlock('title', $context, $blocks);
-        echo "</title>
-        ";
         // line 6
+        echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 13
         echo "    </head>
@@ -64,7 +63,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         // line 16
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 20
+        // line 26
         echo "    </body>
 </html>
 ";
@@ -86,7 +85,6 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -164,11 +162,35 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
         // line 17
         echo "            <script src=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/assets/js/jquery.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/vendor/jquery/dist/jquery.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
         // line 18
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/assets/js/bootstrap.bundle.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/vendor/js-cookie/js.cookie.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/argon.js?v=1.2.0"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 23
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/jquerry-1.11.1.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.min.js+"), "html", null, true);
         echo "\"></script>
         ";
         
@@ -186,7 +208,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  171 => 18,  166 => 17,  156 => 16,  138 => 15,  126 => 11,  122 => 10,  118 => 9,  114 => 8,  109 => 7,  99 => 6,  80 => 5,  68 => 20,  65 => 16,  63 => 15,  59 => 13,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  193 => 24,  189 => 23,  185 => 22,  181 => 21,  177 => 20,  173 => 19,  169 => 18,  164 => 17,  154 => 16,  136 => 15,  124 => 11,  120 => 10,  116 => 9,  112 => 8,  107 => 7,  97 => 6,  79 => 5,  67 => 26,  64 => 16,  62 => 15,  58 => 13,  55 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -195,7 +217,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block title %}{% endblock %}
         {% block stylesheets %}
             <link rel=\"stylesheet\" href=\"{{ asset('/assets/css/bootstrap.min.css') }}\" type=\"text/css\">
             <link rel=\"stylesheet\" href=\"{{ asset('/assets/css/bootstrap.min.css') }}\" type=\"text/css\">
@@ -207,8 +229,14 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}
-            <script src=\"{{ asset('/assets/js/jquery.min.js') }}\"></script>
-            <script src=\"{{ asset('/assets/js/bootstrap.bundle.min.js')}}\"></script>
+            <script src=\"{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/vendor/js-cookie/js.cookie.js') }}\"></script>
+            <script src=\"{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/js/argon.js?v=1.2.0') }}\"></script>
+            <script src=\"{{ asset('assets/js/jquerry-1.11.1.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/js/bootstrap.min.js+') }}\"></script>
         {% endblock %}
     </body>
 </html>

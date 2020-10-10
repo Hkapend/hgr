@@ -24,15 +24,12 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
 
         $this->source = $this->getSourceContext();
 
+        $this->parent = false;
+
         $this->blocks = [
+            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
-    }
-
-    protected function doGetParent(array $context)
-    {
-        // line 1
-        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -44,13 +41,39 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "mwangeji/personne.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "mwangeji/personne.html.twig", 1);
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        // line 1
+        $this->loadTemplate("mwangeji/sidebar.html.twig", "mwangeji/personne.html.twig", 1)->display($context);
+        // line 2
+        echo "<title> ";
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
+";
+        // line 3
+        $this->displayBlock('body', $context, $blocks);
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 2
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo twig_escape_filter($this->env, (isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 2, $this->source); })()), "html", null, true);
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
     }
 
@@ -65,9 +88,6 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    ";
-        $this->loadTemplate("mwangeji/sidebar.html.twig", "mwangeji/personne.html.twig", 4)->display($context);
-        // line 5
         echo "    <div class=\"container-fluid\">
         <div class=\"card-body\">
             <form action=\"\" method=\"post\">
@@ -113,7 +133,7 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
                                 <select id=\"select-genre\" class=\"form-control\" name=\"genre\">
                                     <option value=\"Masculin\">Masculin</option>
                                     <option value=\"Féminin\">Féminin</option>
-                                    <option value=\"Other\">Autre...</option>
+                                    <option value=\"Other...\">Autre...</option>
                                 </select>
                             </div>
                         </div>
@@ -123,36 +143,102 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
                                 <select id=\"select-categorie\" class=\"form-control\" name=\"categorie\">
                                     ";
         // line 58
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["categorie"]) || array_key_exists("categorie", $context) ? $context["categorie"] : (function () { throw new RuntimeError('Variable "categorie" does not exist.', 58, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["affiche"]) {
-            // line 59
-            echo "                                        <option value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "id", [], "any", false, false, false, 59), "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "categorie", [], "any", false, false, false, 59), "html", null, true);
-            echo "</option>
+        echo "                                    <option value=\"1\">Médecin</option>
+                                    <option value=\"2\">Infirmier</option>
+                                    <option value=\"3\">Administrion</option>
                                     ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['affiche'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 61
+        // line 62
         echo "                                </select>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class=\"row\">
-                    <div class=\"col-lg-4\"></div>
-                    <div class=\"col-lg-4\">
-                        <div class=\"form-group\">
-                            <div class=\"text-center\">
-                                <button type=\"submit\" class=\"btn btn-outline-primary\"><i class=\"fa fa-save text-white\"></i>  Enregistrer</button>
+                    <div class=\"collapse\" id=\"collapsePatient\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-2\"></div>
+                            <div class=\"col-lg-4\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-fiche\">Saisir le numéro de la fiche</label>
+                                    <input type=\"text\" id=\"input-fiche\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"fiche\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-4\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"select-type\">Type de Patient</label>
+                                    <select id=\"select-type\" class=\"form-control\" name=\"type\">
+                                        <option value=\"1\" data-toggle=\"collapse\" href=\"#collapseAbonne\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseAbonne\">Abonné</option>
+                                        <option value=\"2\" data-toggle=\"collapse\" href=\"#collapsePrive\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapsePrive\">Privé</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=\"col-lg-4\"></div>
+                    <div class=\"collapse\" id=\"collapsePrive\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-6\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-adresseprive\">Saisir l'adresse du patient</label>
+                                    <input type=\"text\" id=\"input-adresseprive\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"adresseprive\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-6\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-desc\">Saisir la description</label>
+                                    <textarea rows=\"1\" class=\"form-control\" placeholder=\"un mot sur le patient\" name=\"descr\"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"collapse\" id=\"collapseAbonne\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-12\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-adresseabonne\">Saisir l'adresse du patient</label>
+                                    <input type=\"text\" id=\"input-adresseabonne\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"adresseabonne\">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-entreprise\">Saisir le nom de l'entreprise</label>
+                                    <input type=\"text\" id=\"input-entreprise\" class=\"form-control\" placeholder=\"ex: SNEL\" name=\"entreprise\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-bon\">Bon Numéro</label>
+                                    <input type=\"text\" id=\"input-bon\" class=\"form-control\" placeholder=\"ex: 12/SNEL/Med\" name=\"bon\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-agent\">Saisir le nom de l'agent</label>
+                                    <input type=\"text\" id=\"input-agent\" class=\"form-control\" placeholder=\"ex: Hervé Kapend\" name=\"agent\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-matricule\">Saisir le matricule de l'agent</label>
+                                    <input type=\"text\" id=\"input-matricule\" class=\"form-control\" placeholder=\"ex: H01232\" name=\"matricule\">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"row\">
+                        <div class=\"col-lg-4\"></div>
+                        <div class=\"col-lg-4\">
+                            <div class=\"form-group\">
+                                <div class=\"text-center\">
+                                    <button type=\"submit\" class=\"btn btn-outline-primary\"><i class=\"fa fa-save text-white\"></i>  Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"col-lg-4\"></div>
+                    </div>
                 </div>
             </form>
         </div>
@@ -178,52 +264,52 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
                 </thead>
                 <tbody class=\"list text-center \">
                 ";
-        // line 100
+        // line 177
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["personne"]) || array_key_exists("personne", $context) ? $context["personne"] : (function () { throw new RuntimeError('Variable "personne" does not exist.', 100, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["personne"]) || array_key_exists("personne", $context) ? $context["personne"] : (function () { throw new RuntimeError('Variable "personne" does not exist.', 177, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["affiche"]) {
-            // line 101
+            // line 178
             echo "                    <tr>
                         <th scope=\"row\">
                             ";
-            // line 103
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "nom", [], "any", false, false, false, 103), "html", null, true);
+            // line 180
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "nom", [], "any", false, false, false, 180), "html", null, true);
             echo "
                         </th>
                         <th scope=\"row\">
                             ";
-            // line 106
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "postNom", [], "any", false, false, false, 106), "html", null, true);
+            // line 183
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "postNom", [], "any", false, false, false, 183), "html", null, true);
             echo "
                         </th>
                         <th scope=\"row\">
                             ";
-            // line 109
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "prenom", [], "any", false, false, false, 109), "html", null, true);
+            // line 186
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "prenom", [], "any", false, false, false, 186), "html", null, true);
             echo "
                         </th>
                         <th scope=\"row\">
                             ";
-            // line 112
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "lieuNaissance", [], "any", false, false, false, 112), "html", null, true);
+            // line 189
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "lieuNaissance", [], "any", false, false, false, 189), "html", null, true);
             echo "
                         </th>
                         <th scope=\"row\">
                             ";
-            // line 115
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "dateNaissance", [], "any", false, false, false, 115), "d-m-Y"), "html", null, true);
+            // line 192
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "dateNaissance", [], "any", false, false, false, 192), "d-m-Y"), "html", null, true);
             echo "
                         </th>
                         <th scope=\"row\">
                             ";
-            // line 118
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "sexe", [], "any", false, false, false, 118), "html", null, true);
+            // line 195
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["affiche"], "sexe", [], "any", false, false, false, 195), "html", null, true);
             echo "
                         </th>
                         <th class=\"row\">
                             ";
-            // line 121
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["affiche"], "categorie", [], "any", false, false, false, 121), "categorie", [], "any", false, false, false, 121), "html", null, true);
+            // line 198
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["affiche"], "categorie", [], "any", false, false, false, 198), "categorie", [], "any", false, false, false, 198), "html", null, true);
             echo "
                         </th>
                         <th class=\"bg-default shadow\">
@@ -235,7 +321,7 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['affiche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 128
+        // line 205
         echo "                </tbody>
             </table>
         </div>
@@ -287,15 +373,14 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
 
     public function getDebugInfo()
     {
-        return array (  239 => 128,  226 => 121,  220 => 118,  214 => 115,  208 => 112,  202 => 109,  196 => 106,  190 => 103,  186 => 101,  182 => 100,  141 => 61,  130 => 59,  126 => 58,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  325 => 205,  312 => 198,  306 => 195,  300 => 192,  294 => 189,  288 => 186,  282 => 183,  276 => 180,  272 => 178,  268 => 177,  151 => 62,  146 => 58,  91 => 4,  81 => 3,  62 => 2,  52 => 3,  47 => 2,  45 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
-
+        return new Source("{% include 'mwangeji/sidebar.html.twig' %}
+<title> {% block title %}{{ page_name }}{% endblock %}</title>
 {% block body %}
-    {% include 'mwangeji/sidebar.html.twig' %}
     <div class=\"container-fluid\">
         <div class=\"card-body\">
             <form action=\"\" method=\"post\">
@@ -341,7 +426,7 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
                                 <select id=\"select-genre\" class=\"form-control\" name=\"genre\">
                                     <option value=\"Masculin\">Masculin</option>
                                     <option value=\"Féminin\">Féminin</option>
-                                    <option value=\"Other\">Autre...</option>
+                                    <option value=\"Other...\">Autre...</option>
                                 </select>
                             </div>
                         </div>
@@ -349,24 +434,102 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
                             <div class=\"form-group\">
                                 <label class=\"form-control-label\" for=\"select-categorie\">Categorie</label>
                                 <select id=\"select-categorie\" class=\"form-control\" name=\"categorie\">
-                                    {% for affiche in categorie %}
-                                        <option value=\"{{affiche.id}}\">{{affiche.categorie}}</option>
-                                    {% endfor %}
+                                    {#% for affiche in categorie %#}
+                                    <option value=\"1\">Médecin</option>
+                                    <option value=\"2\">Infirmier</option>
+                                    <option value=\"3\">Administrion</option>
+                                    {#% endfor %#}
                                 </select>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class=\"row\">
-                    <div class=\"col-lg-4\"></div>
-                    <div class=\"col-lg-4\">
-                        <div class=\"form-group\">
-                            <div class=\"text-center\">
-                                <button type=\"submit\" class=\"btn btn-outline-primary\"><i class=\"fa fa-save text-white\"></i>  Enregistrer</button>
+                    <div class=\"collapse\" id=\"collapsePatient\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-2\"></div>
+                            <div class=\"col-lg-4\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-fiche\">Saisir le numéro de la fiche</label>
+                                    <input type=\"text\" id=\"input-fiche\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"fiche\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-4\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"select-type\">Type de Patient</label>
+                                    <select id=\"select-type\" class=\"form-control\" name=\"type\">
+                                        <option value=\"1\" data-toggle=\"collapse\" href=\"#collapseAbonne\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseAbonne\">Abonné</option>
+                                        <option value=\"2\" data-toggle=\"collapse\" href=\"#collapsePrive\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapsePrive\">Privé</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=\"col-lg-4\"></div>
+                    <div class=\"collapse\" id=\"collapsePrive\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-6\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-adresseprive\">Saisir l'adresse du patient</label>
+                                    <input type=\"text\" id=\"input-adresseprive\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"adresseprive\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-6\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-desc\">Saisir la description</label>
+                                    <textarea rows=\"1\" class=\"form-control\" placeholder=\"un mot sur le patient\" name=\"descr\"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"collapse\" id=\"collapseAbonne\">
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-12\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-adresseabonne\">Saisir l'adresse du patient</label>
+                                    <input type=\"text\" id=\"input-adresseabonne\" class=\"form-control\" placeholder=\"ex: 07/4516/2020\" name=\"adresseabonne\">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class=\"my-1\" />
+                        <div class=\"row\">
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-entreprise\">Saisir le nom de l'entreprise</label>
+                                    <input type=\"text\" id=\"input-entreprise\" class=\"form-control\" placeholder=\"ex: SNEL\" name=\"entreprise\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-bon\">Bon Numéro</label>
+                                    <input type=\"text\" id=\"input-bon\" class=\"form-control\" placeholder=\"ex: 12/SNEL/Med\" name=\"bon\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-agent\">Saisir le nom de l'agent</label>
+                                    <input type=\"text\" id=\"input-agent\" class=\"form-control\" placeholder=\"ex: Hervé Kapend\" name=\"agent\">
+                                </div>
+                            </div>
+                            <div class=\"col-lg-3\">
+                                <div class=\"form-group\">
+                                    <label class=\"form-control-label\" for=\"input-matricule\">Saisir le matricule de l'agent</label>
+                                    <input type=\"text\" id=\"input-matricule\" class=\"form-control\" placeholder=\"ex: H01232\" name=\"matricule\">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"row\">
+                        <div class=\"col-lg-4\"></div>
+                        <div class=\"col-lg-4\">
+                            <div class=\"form-group\">
+                                <div class=\"text-center\">
+                                    <button type=\"submit\" class=\"btn btn-outline-primary\"><i class=\"fa fa-save text-white\"></i>  Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"col-lg-4\"></div>
+                    </div>
                 </div>
             </form>
         </div>
@@ -449,6 +612,40 @@ class __TwigTemplate_3fccac25d02977ae3579ed411f57296fae49589e9e8c6f243e6e9c51337
         </div>
     </div>
 </div>
-{% endblock %}", "mwangeji/personne.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/personne.html.twig");
+{% endblock %}
+{#% block javascripts %}
+    <script type=\"text/javascript\">
+        \$(function() {
+        // Remove button click
+        \$(document).on(
+        'click',
+        '[data-role=\"dynamic-fields\"] > .form-inline [data-role=\"remove\"]',
+        function(e) {
+        e.preventDefault();
+        \$(this).closest('.form-inline').remove();
+
+        }
+        );
+        // Add button click
+        \$(document).on(
+        'click',
+        '[data-role=\"dynamic-fields\"] > .form-inline [data-role=\"add\"]',
+        function(e) {
+        e.preventDefault();
+        var container = \$(this).closest('[data-role=\"dynamic-fields\"]');
+        new_field_group = container.children().filter('.form-inline:first-child').clone();
+        new_field_group.find('input').each(function(){
+        \$(this).val('');
+
+        });
+        container.append(new_field_group);
+
+        }
+        );
+
+        })
+    </script>
+{% endblock %#}
+", "mwangeji/personne.html.twig", "/home/hkap/Bureau/mwangeji/templates/mwangeji/personne.html.twig");
     }
 }
